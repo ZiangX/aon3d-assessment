@@ -49,6 +49,154 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <div id="carouselControl" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselControl"
+            class="slider-indicator"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+            onclick="currentSlide(1)"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControl"
+            class="slider-indicator"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            onclick="currentSlide(2)"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControl"
+            class="slider-indicator"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            onclick="currentSlide(3)"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControl"
+            class="slider-indicator"
+            data-bs-slide-to="4"
+            aria-label="Slide 4"
+            onclick="currentSlide(4)"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-banner1">
+            <div class="container py-5 row">
+              <div class="carousel-caption col-10 col-md-8 col-lg-7 col-xl-5 text-start">
+                <p>WELCOMER TO AON3D</p>
+                <h1>Learn from us and 3DPrint Your Bright Future.</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-banner2">
+            <div class="container py-5 row">
+              <div class="carousel-caption col-10 col-md-8 col-lg-7 col-xl-5 text-start">
+                <p>WELCOMER TO AON3D</p>
+                <h1>Learn from us and 3DPrint Your Bright Future.</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-banner3">
+            <div class="container py-5 row">
+              <div class="carousel-caption col-10 col-md-8 col-lg-7 col-xl-5 text-start">
+                <p>WELCOMER TO AON3D</p>
+                <h1>Learn from us and 3DPrint Your Bright Future.</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-banner4 active">
+            <div class="container py-5 row">
+              <div class="carousel-caption col-10 col-md-8 col-lg-7 col-xl-5 text-start">
+                <p>WELCOMER TO AON3D</p>
+                <h1>Learn from us and 3DPrint Your Bright Future.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="prev" onclick="plusSlides(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="next" onclick="plusSlides(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="body__cards">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col px-3 ps-md-0 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">Doucumentation</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Find installation and configuration guides, maintenance procedures, material guides, and more.</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">READ DOCS</button>
+                </div>
+              </div>
+            </div>
+            <div class="col px-3 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">AON3D Academy</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Boost your knowledge about our products and enhance your professional profiles</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">ACCESS COURSE</button>
+                </div>
+              </div>
+            </div>
+            <div class="col px-3 pe-md-0 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">Online Store</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Purchase consumables, spare parts, and filament</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">PURCHASE ITEMS</button>
+                </div>
+              </div>
+            </div>
+            <div class="col px-3 ps-md-0 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">Vendors</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Find installation and configuration guides, maintenance procedures, material guides, and more.</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">READ DOCS</button>
+                </div>
+              </div>
+            </div>
+            <div class="col px-3 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">Suppliers A</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Boost your knowledge about our products and enhance your professional profiles</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">ACCESS COURSE</button>
+                </div>
+              </div>
+            </div>
+            <div class="col px-3 pe-md-0 pb-5">
+              <div class="card h-100">
+                <h3 class="card-title mb-4">Suppliers B</h3>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <p class="card-text mb-4">Purchase consumables, spare parts, and filament</p>
+                  <button type="button" class="btn btn-primary btn-lg card__btn">PURCHASE ITEMS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
