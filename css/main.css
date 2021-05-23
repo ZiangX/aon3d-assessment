@@ -66,3 +66,12 @@ body,
   font-size: 1rem;
   font-weight: 500;
 }
+
+footer {
+  background-color: black;
+}
+
+.footer-list-items {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
