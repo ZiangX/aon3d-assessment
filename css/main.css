@@ -75,3 +75,38 @@ footer {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  /* Handle card title split into two lines */
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .footer-list-items {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Handle the xs screen */
+@media screen and (max-width: 575px) {
+  .carousel-caption {
+    top: 5rem;
+    padding-left: 0;
+    margin-left: -10px;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .footer__copy-right {
+    font-size: 1rem;
+  }
+}
