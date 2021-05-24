@@ -21,8 +21,8 @@
         <div class="container py-2">
           <div class="navbar-brand d-flex align-items-center">
             <img src="./images/logo.svg" alt="Logo" />
-            <a id="link-home" class="nav-link active" href="/index.html">Home</a>
-            <a id="link-gallery" class="nav-link" href="/gallery.html">Gallery</a>
+            <a id="link-home" class="nav-link active" href="/index.html" onclick="redirectTo('home')">Home</a>
+            <a id="link-gallery" class="nav-link" href="/gallery.html" onclick="redirectTo('gallery')">Gallery</a>
           </div>
           <button class="navbar-toggler" id="headerNavbarToggler" type="button" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,14 +30,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="headerNavbarCollapse">
             <ul class="navbar-nav mb-0 ms-4">
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="accountDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="true"
-                >
+                <a class="nav-link dropdown-toggle" id="accountDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   ACCOUNT
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" id="accountDropdownMenu" aria-labelledby="accountDropdownMenu">
@@ -137,68 +130,24 @@
         </button>
       </div>
       <!-- End of Slider -->
-      <!-- Begin of six sections -->
+      <!-- Begin of photo gallery sections -->
       <div class="body__cards">
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">Doucumentation</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Find installation and configuration guides, maintenance procedures, material guides, and more.</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">READ DOCS</button>
-                </div>
-              </div>
-            </div>
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">AON3D Academy</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Boost your knowledge about our products and enhance your professional profiles</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">ACCESS COURSE</button>
-                </div>
-              </div>
-            </div>
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">Online Store</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Purchase consumables, spare parts, and filament</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">PURCHASE ITEMS</button>
-                </div>
-              </div>
-            </div>
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">Vendors</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Find installation and configuration guides, maintenance procedures, material guides, and more.</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">READ DOCS</button>
-                </div>
-              </div>
-            </div>
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">Suppliers A</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Boost your knowledge about our products and enhance your professional profiles</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">ACCESS COURSE</button>
-                </div>
-              </div>
-            </div>
-            <div class="col px-3 pb-5">
-              <div class="card h-100">
-                <h3 class="card-title mb-4">Suppliers B</h3>
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <p class="card-text mb-4">Purchase consumables, spare parts, and filament</p>
-                  <button type="button" class="btn btn-primary btn-lg card__btn">PURCHASE ITEMS</button>
-                </div>
-              </div>
-            </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="photoGallery">
+            <!-- Insert the fetched photo here -->
           </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><button class="page-link" onclick="plusPage(-1)">Previous</button></li>
+              <li class="page-item"><button class="page-link" onclick="currentPage(1)">1</button></li>
+              <li class="page-item"><button class="page-link" onclick="currentPage(2)">2</button></li>
+              <li class="page-item"><button class="page-link" onclick="currentPage(3)">3</button></li>
+              <li class="page-item"><button class="page-link" onclick="plusPage(1)">Next</button></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <!-- End of six Sections -->
+      <!-- End of photo gallery Sections -->
     </main>
 
     <footer>
