@@ -24,7 +24,7 @@ headerNavbarToggler.addEventListener("click", function () {
 const currentPath = window.location.pathname;
 const linkHome = document.querySelector("#link-home");
 const linkGallery = document.querySelector("#link-gallery");
-if (currentPath !== "/gallery.html") {
+if (!currentPath.includes("/gallery.html")) {
   linkHome.classList.add("active");
   linkGallery.classList.remove("active");
 } else {
@@ -70,7 +70,7 @@ function showSlides(n) {
 // Show photos
 var photoPage = 1;
 // Only run showPhoto function in the gallery page
-if (window.location.pathname === "/gallery.html") showPhotos(photoPage);
+if (window.location.pathname.includes("/gallery.html")) showPhotos(photoPage);
 
 function currentPage(n) {
   var newPage = 0;
