@@ -9,6 +9,21 @@ body,
   opacity: 0.7;
 }
 
+.navbar-brand a,
+#accountDropdownMenuLink {
+  color: #919191;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
 .carousel-item {
   height: 100vh;
   background-repeat: no-repeat;
@@ -95,6 +110,12 @@ footer {
 
 /* Handle the xs screen */
 @media screen and (max-width: 575px) {
+  .navbar-brand a {
+    font-size: 0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .carousel-caption {
     top: 5rem;
     padding-left: 0;
