@@ -1,4 +1,14 @@
 <!DOCTYPE html>
 <script>
-    window.location.href = "hauslifeapp://ResetPassword#Intent;scheme=http;action=open_favs;end";
+     function getParameterByName(name) {
+        url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    window.location.href = "hauslifeapp://ResetPassword?token=" + getParameterByName('token') + "#Intent;scheme=http;action=open_favs;end";
 </script>
