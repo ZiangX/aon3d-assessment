@@ -11,12 +11,9 @@
     }
 
     // window.location.href = "hausvaletapp://ResetPassword?token=" + getParameterByName('token') + "#Intent;scheme=http;end";
-    document.getElementById("url").innerHTML = window.location.href;
+    document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
     console.log(window.location.href);
 </script>
 <body>
-    <p id='url'>
-        test
-    </p>
-
+    <div id="container"></div>
 </body>
