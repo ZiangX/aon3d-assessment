@@ -21,8 +21,7 @@
       setInterval(function () {
         if (getParameterByName("code")) {
           // window.location.href = "hausvaletapp://main/shooting?code=" + getParameterByName("code") + "#Intent;scheme=http;end";
-          window.location.href = "hausvaletapp://main/shootingTab/ScheduleShoot#Intent;scheme=http;end";
-
+          window.location.href = "hausvaletapp://main/shootingTab/ScheduleShoot?test=123#Intent;scheme=http;end";
         } else {
           document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
         }
