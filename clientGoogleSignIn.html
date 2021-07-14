@@ -17,9 +17,12 @@
       // window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName('code') + "#Intent;scheme=http;end";
       // window.location.href = "hausvaletapp://main/profileTab/notificationSetting/calendarSync/" + getParameterByName('code') + "#Intent;scheme=http;end";
       document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
+      
       setInterval(function () {
         if (getParameterByName("code")) {
-          window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName("code") + "#Intent;scheme=http;end";
+          // window.location.href = "hausvaletapp://main/shooting?code=" + getParameterByName("code") + "#Intent;scheme=http;end";
+          window.location.href = "hausvaletapp://main/shootingTab/ScheduleShoot#Intent;scheme=http;end";
+
         } else {
           document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
         }
@@ -27,3 +30,7 @@
     </script>
   </body>
 </html>
+
+sign in => url with the code etc => extract the code => deep link back with the code
+
+https://ziangx.github.io/aon3d-assessment/clientGoogleSignIn.html?state=0DQ5QDAzVCpQWjwCMxLyVkk2k0MVfHzEPEvrGuZIxJA&code=4/0AX4XfWjvNac0x6JAz4eqaDZMousq8kudvX6o36Y3U5GWEzUN3LHUdQvcKdW0GQjiRjYuZw&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/calendar.events&authuser=0&prompt=consent
