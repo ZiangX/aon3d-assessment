@@ -14,9 +14,9 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
 
-      window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName('code') + "#Intent;scheme=http;end";
+      // window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName('code') + "#Intent;scheme=http;end";
       // window.location.href = "hausvaletapp://main/profileTab/notificationSetting/calendarSync/" + getParameterByName('code') + "#Intent;scheme=http;end";
-
+      document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
     </script>
   </body>
 </html>
