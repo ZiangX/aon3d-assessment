@@ -16,14 +16,14 @@
 
       // window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName('code') + "#Intent;scheme=http;end";
       // window.location.href = "hausvaletapp://main/profileTab/notificationSetting/calendarSync/" + getParameterByName('code') + "#Intent;scheme=http;end";
-
+      document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
       setInterval(function () {
         if (getParameterByName("code")) {
           window.location.href = "hausvaletapp://main/profileTab?code=" + getParameterByName("code") + "#Intent;scheme=http;end";
         } else {
           document.getElementById("container").innerHTML = `<p>${window.location.href}</p>`;
         }
-      }, 2000);
+      }, 3000);
     </script>
   </body>
 </html>
