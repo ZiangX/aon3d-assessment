@@ -14,10 +14,7 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
 
-      // window.location.href = "hausvaletapp://main/profileTab/notificationSetting/calendarSync" + getParameterByName('token') + "#Intent;scheme=http;end";
-
-      console.log(getParameterByName('code'));
-      document.getElementById("container").innerHTML = window.location.href;
+      window.location.href = "hausvaletapp://main/profileTab/notificationSetting/calendarSync/" + getParameterByName('code') + "#Intent;scheme=http;end";
     </script>
   </body>
 </html>
